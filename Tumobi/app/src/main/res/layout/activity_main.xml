@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.tumobi.MainActivity">
+
+   <android.support.design.widget.AppBarLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:theme="@style/AppTheme"
+       android:id="@+id/abl"
+       >
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <android.support.v7.widget.Toolbar
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:id="@+id/toolbar"
+             ></android.support.v7.widget.Toolbar>
+
+         <com.miguelcatalan.materialsearchview.MaterialSearchView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/msv"
+             ></com.miguelcatalan.materialsearchview.MaterialSearchView>
+      </FrameLayout>
+   </android.support.design.widget.AppBarLayout>
+
+
+   <android.support.design.widget.TabLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" android:id="@+id/main_tab"
+       app:tabSelectedTextColor="#A72020"
+       android:layout_alignParentBottom="true"
+       ></android.support.design.widget.TabLayout>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/fram"
+       android:layout_below="@id/abl"
+       android:layout_above="@id/main_tab"
+       ></FrameLayout>
+</RelativeLayout>

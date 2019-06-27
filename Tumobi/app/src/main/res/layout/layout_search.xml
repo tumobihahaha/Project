@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_introduce_two_phone_right"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#595039"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最近搜索"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#595039"
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空记录"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_search"
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#595039"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索发现"
+            />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#595039"
+            android:layout_marginTop="5dp"
+            android:id="@+id/huan"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换一换"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/huan"
+            android:src="@mipmap/ic_shake"
+            />
+    </RelativeLayout>
+
+    <com.example.lenovo.tumobi.ui.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flow"
+        ></com.example.lenovo.tumobi.ui.FlowLayout>
+</LinearLayout>
